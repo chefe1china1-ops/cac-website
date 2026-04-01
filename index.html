@@ -1,70 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CAC Microcrédito</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b1220;
-      color: white;
-      text-align: center;
-    }
-    header {
-      padding: 20px;
-      background: #111827;
-    }
-    h1 {
-      font-size: 2.5rem;
-    }
-    .hero {
-      padding: 60px 20px;
-    }
-    .btn {
-      background: white;
-      color: black;
-      padding: 12px 20px;
-      border-radius: 30px;
-      text-decoration: none;
-      margin-top: 20px;
-      display: inline-block;
-    }
-    .section {
-      padding: 40px 20px;
-    }
-    .card {
-      background: #1f2937;
-      padding: 20px;
-      margin: 10px auto;
-      border-radius: 10px;
-      max-width: 300px;
-    }
-    footer {
-      padding: 20px;
-      background: #111827;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAC Microcrédito</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #07111f;
+  color: white;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background: #081827;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.btn {
+  background: white;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+.card {
+  background: #111827;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #081827;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>CAC</h1>
-  <p>Microcrédito com confiança</p>
+  <div class="logo">CAC Microcrédito</div>
+  <div>Confiança • Clareza • Apoio</div>
 </header>
 
 <section class="hero">
-  <h1>Crédito para tirar planos do papel</h1>
-  <p>Apoiamos jovens a iniciar negócios e resolver necessidades do dia a dia.</p>
-  <a href="#" class="btn">Pedir Crédito</a>
+  <h1>Crédito inteligente para tirar planos do papel</h1>
+  <p>Apoiamos jovens e pequenos negócios com soluções rápidas, simples e seguras.</p>
+
+  <a href="https://wa.me/258848215218" class="btn">Pedir Crédito</a>
 </section>
 
 <section class="section">
   <h2>Produtos</h2>
-  <div class="card">Microcrédito para Negócio</div>
-  <div class="card">Crédito Emergencial</div>
-  <div class="card">Crédito Progressivo</div>
+  <div class="grid">
+    <div class="card">
+      <h3>Microcrédito para Negócio</h3>
+      <p>Para iniciar ou expandir pequenos negócios.</p>
+    </div>
+
+    <div class="card">
+      <h3>Crédito Emergencial</h3>
+      <p>Para necessidades urgentes do dia a dia.</p>
+    </div>
+
+    <div class="card">
+      <h3>Crédito Progressivo</h3>
+      <p>Aumenta o acesso com base no histórico.</p>
+    </div>
+  </div>
 </section>
 
 <section class="section">
@@ -75,13 +118,36 @@
 </section>
 
 <section class="section">
-  <h2>Contacto</h2>
-  <p>Email: contacto@cac.com</p>
-  <p>WhatsApp: +258...</p>
+  <h2>Porque escolher a CAC?</h2>
+  <div class="grid">
+    <div class="card">Processo simples</div>
+    <div class="card">Condições claras</div>
+    <div class="card">Apoio humano</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Testemunhos</h2>
+  <div class="grid">
+    <div class="card">“Consegui abrir meu negócio.”</div>
+    <div class="card">“Processo simples e claro.”</div>
+    <div class="card">“Atendimento excelente.”</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Pedir Crédito</h2>
+
+  <input placeholder="Nome completo">
+  <input placeholder="Contacto">
+  <input placeholder="Valor pretendido">
+  <textarea placeholder="Descreve o teu objetivo"></textarea>
+
+  <a href="https://wa.me/258848215218" class="btn">Enviar Pedido</a>
 </section>
 
 <footer>
-  <p>© CAC - Microcrédito</p>
+  <p>© CAC Microcrédito Lda</p>
 </footer>
 
 </body>
